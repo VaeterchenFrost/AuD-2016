@@ -10,7 +10,7 @@ typedef struct elem {
 /*
 Schreiben Sie ein C-Programm, welches den Nutzer zur Eingabe einer Zahl
 n>=0 auffordert.
-Ist n>=2, so sollen die Primfaktoren von n ausgegeben werden. Für
+Ist n>=2, so sollen die Primfaktoren von n ausgegeben werden. FÃ¼r
 n = 0 bzw. n = 1 soll keine Ausgabe erfolgen.
 Beispiel: Ist n = 20, dann soll "2 2 5 " ausgegeben werden.
 */
@@ -55,13 +55,13 @@ list ListpotentialPrimeF(int n){
 
 void prtPFZ(list primlist, int n){
     int i=n, j;
-    while(primlist){//Prüfe Value
+    while(primlist){//PrÃ¼fe Value
             j = primlist->value;
             if(i%j == 0){ //Teilbar
                 printf("%d ", j);
                 i /= j;
             }
-            else{ //Nicht Teilbar -> nächst größere
+            else{ //Nicht Teilbar -> nÃ¤chst grÃ¶ÃŸere
                 primlist=primlist->next;
             }
     }
